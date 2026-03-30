@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Nawaab's Restaurant icon</title>
+  <desc id="desc">Gold letter N on a dark premium background.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E9C46A"/>
+      <stop offset="55%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#FF6B35"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="52" fill="#111111"/>
+  <rect x="16" y="16" width="224" height="224" rx="40" fill="none" stroke="url(#gold)" stroke-width="8"/>
+  <path d="M70 190V66h26l66 79V66h24v124h-24L94 108v82H70z" fill="url(#gold)"/>
+</svg>

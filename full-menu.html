@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Full menu sheet for NAWAAB'S RESTAURANT & CATERERS in Durgapur.">
+  <meta name="theme-color" content="#111111">
+  <title>NAWAAB'S Full Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg: #111111;
+      --bg-soft: #1a1a1a;
+      --bg-deep: #0d0d0d;
+      --panel: rgba(26, 26, 26, 0.92);
+      --panel-strong: rgba(13, 13, 13, 0.96);
+      --text: #ffffff;
+      --text-dark: #222222;
+      --muted: #e4d6c3;
+      --gold: #d4af37;
+      --gold-soft: #e9c46a;
+      --cream: #fff5e1;
+      --cta: #ff3d00;
+      --cta-soft: #ff6b35;
+      --line: rgba(212, 175, 55, 0.16);
+      --line-strong: rgba(255, 245, 225, 0.16);
+      --shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+      --container: min(1180px, calc(100% - 32px));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(212, 175, 55, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(128, 0, 0, 0.16), transparent 24%),
+        linear-gradient(180deg, #171717 0%, #111111 44%, #0d0d0d 100%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: var(--container);
+      margin: 0 auto;
+    }
+
+    .announcement {
+      border-bottom: 1px solid rgba(255, 245, 225, 0.08);
+      background: linear-gradient(90deg, rgba(128, 0, 0, 0.94), rgba(255, 61, 0, 0.88));
+    }
+
+    .announcement .container {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .announcement a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(13, 13, 13, 0.82);
+      border-bottom: 1px solid rgba(255, 245, 225, 0.08);
+    }
+
+    .site-header .container {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-soft), var(--cta-soft));
+      color: var(--text-dark);
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-kicker {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .brand-name {
+      font-family: "Playfair Display", serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .nav a,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line-strong);
+      background: rgba(255, 245, 225, 0.05);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    .button-primary {
+      color: var(--text);
+      background: linear-gradient(135deg, var(--cta-soft), var(--cta));
+      border-color: transparent;
+    }
+
+    .button-gold {
+      color: var(--text-dark);
+      background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+      border-color: transparent;
+    }
+
+    .page-shell {
+      padding: 44px 0 72px;
+    }
+
+    .hero,
+    .menu-group,
+    .side-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel), var(--panel-strong));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .hero {
+      border-radius: 34px;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Playfair Display", serif;
+      line-height: 1.06;
+    }
+
+    h1 {
+      margin: 18px 0 16px;
+      font-size: clamp(2.5rem, 6vw, 4.6rem);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 1.18rem;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.78;
+    }
+
+    .hero-meta,
+    .dish-meta,
+    .actions,
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-meta {
+      margin-top: 24px;
+    }
+
+    .pill,
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 245, 225, 0.05);
+      color: var(--cream);
+    }
+
+    .hero-panel {
+      padding: 26px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at top right, rgba(212, 175, 55, 0.14), transparent 34%),
+        rgba(255, 245, 225, 0.04);
+    }
+
+    .hero-panel strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+    }
+
+    .actions {
+      margin-top: 24px;
+    }
+
+    .content-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .menu-group {
+      border-radius: 30px;
+      padding: 28px;
+    }
+
+    .menu-group + .menu-group {
+      margin-top: 20px;
+    }
+
+    .dish-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .dish {
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255, 245, 225, 0.04);
+    }
+
+    .dish-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: var(--gold-soft);
+      font-weight: 700;
+      white-space: nowrap;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .dish p {
+      margin-bottom: 12px;
+    }
+
+    .side-card {
+      position: sticky;
+      top: 100px;
+      border-radius: 28px;
+      padding: 24px;
+    }
+
+    .side-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .side-card .stack {
+      margin-top: 18px;
+      flex-direction: column;
+    }
+
+    .side-card .stack a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 14px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 245, 225, 0.04);
+      color: var(--cream);
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: rgba(13, 13, 13, 0.94);
+    }
+
+    .site-footer .container {
+      padding: 26px 0 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-copy {
+      max-width: 420px;
+    }
+
+    .footer-copy p {
+      margin-top: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 245, 225, 0.04);
+      color: var(--cream);
+      font-size: 0.84rem;
+    }
+
+    @media print {
+      .announcement,
+      .site-header,
+      .site-footer,
+      .side-card,
+      .actions {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+        color: #111;
+      }
+
+      .hero,
+      .menu-group,
+      .dish {
+        box-shadow: none;
+        background: #fff;
+        color: #111;
+      }
+
+      p,
+      .tag,
+      .pill {
+        color: #444;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 960px) {
+      .hero,
+      .content-grid,
+      .dish-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .side-card {
+        position: relative;
+        top: auto;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .announcement .container,
+      .site-header .container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0;
+      }
+
+      .announcement a {
+        display: none;
+      }
+
+      .hero,
+      .menu-group,
+      .side-card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">
+    <div class="container">
+      <span>Open daily from 1:00 PM to 12:00 AM. Fast WhatsApp ordering and group catering support available.</span>
+      <a href="https://maps.app.goo.gl/4suhm9XRPbtXRCv97" target="_blank" rel="noopener noreferrer">Get Directions</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html#home" aria-label="Back to Nawaab's homepage">
+        <span class="brand-mark">N</span>
+        <span class="brand-copy">
+          <span class="brand-kicker">Durgapur</span>
+          <span class="brand-name">NAWAAB'S</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Page links">
+        <a href="index.html#menu">Main Website</a>
+        <a href="catering-menu.html">Catering Sheet</a>
+        <a class="button button-primary" href="https://wa.me/917797777773?text=Hello%20please%20share%20today%27s%20menu%20from%20Nawaab%27s%20Restaurant%20%26%20Caterers." target="_blank" rel="noopener noreferrer">WhatsApp Menu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container">
+      <section class="hero">
+        <div>
+          <span class="eyebrow">NAWAAB'S RESTAURANT & CATERERS</span>
+          <h1>Full menu sheet for dine-in, takeaway, and event planning.</h1>
+          <p>Use this page as the real website menu reference for table planning, WhatsApp orders, and catering discussions without leaving the brand experience.</p>
+          <div class="hero-meta">
+            <span class="pill">Open daily: 1:00 PM - 12:00 AM</span>
+            <span class="pill">Phone: +91 77977 77773</span>
+            <span class="pill">Durgapur, Bidhannagar</span>
+          </div>
+          <div class="actions">
+            <a class="button button-primary" href="javascript:window.print()">Print / Save as PDF</a>
+            <a class="button button-gold" href="index.html#reservation">Reserve a Table</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <strong>Best ways to use this page</strong>
+          <p>Share it with family before dinner, use it while ordering on WhatsApp, or keep it open during catering discussions so package ideas and pricing stay easy to compare.</p>
+          <div class="hero-meta">
+            <span class="tag">Biryani</span>
+            <span class="tag">Tandoor</span>
+            <span class="tag">Desserts</span>
+            <span class="tag">Drinks</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <div>
+          <section class="menu-group">
+            <span class="eyebrow">Starters & Tandoor</span>
+            <h2>Openers built for sharing</h2>
+            <div class="dish-grid">
+              <article class="dish">
+                <div class="dish-head"><h3>Chicken Reshmi Kebab</h3><span class="price">Rs. 329</span></div>
+                <p>Silky skewers with smoky edges and buttery marinade, served to open the appetite quickly.</p>
+                <div class="dish-meta"><span class="tag">Non-veg</span><span class="tag">18 min</span><span class="tag">Chef pick</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Paneer Tikka Zafrani</h3><span class="price">Rs. 279</span></div>
+                <p>Charred paneer cubes with saffron yogurt, roasted capsicum, and a rich tandoor finish.</p>
+                <div class="dish-meta"><span class="tag">Veg</span><span class="tag">20 min</span><span class="tag">House special</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Tandoor Feast Platter</h3><span class="price">Rs. 699</span></div>
+                <p>A mixed grill presentation designed for tables that want variety, smoke, and fast group service.</p>
+                <div class="dish-meta"><span class="tag">Non-veg</span><span class="tag">28 min</span><span class="tag">Party platter</span></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-group">
+            <span class="eyebrow">Biryani & Mains</span>
+            <h2>House signatures and comfort classics</h2>
+            <div class="dish-grid">
+              <article class="dish">
+                <div class="dish-head"><h3>Nawaab's Signature Dum Biryani</h3><span class="price">Rs. 399</span></div>
+                <p>Long-grain rice, layered masala, tender chicken, and a slow-finished aroma that defines the house.</p>
+                <div class="dish-meta"><span class="tag">Non-veg</span><span class="tag">26 min</span><span class="tag">Bestseller</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Paneer-e-Khaas Biryani</h3><span class="price">Rs. 299</span></div>
+                <p>Soft paneer, mint, saffron notes, and fragrant rice for a celebratory vegetarian centerpiece.</p>
+                <div class="dish-meta"><span class="tag">Veg</span><span class="tag">22 min</span><span class="tag">Popular</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Butter Chicken Handi</h3><span class="price">Rs. 349</span></div>
+                <p>Velvety tomato gravy, soft chicken, and a comfort-food finish made for naan and roomali roti.</p>
+                <div class="dish-meta"><span class="tag">Non-veg</span><span class="tag">24 min</span><span class="tag">Most ordered</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Mutton Rogan Josh</h3><span class="price">Rs. 449</span></div>
+                <p>Slow-cooked mutton in a rich spiced gravy that lands with warmth rather than heat.</p>
+                <div class="dish-meta"><span class="tag">Non-veg</span><span class="tag">30 min</span><span class="tag">Weekend favorite</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Dal Nawaabi</h3><span class="price">Rs. 239</span></div>
+                <p>Slow-simmered lentils with butter and gentle smoke, built to accompany kebabs, biryani, or breads.</p>
+                <div class="dish-meta"><span class="tag">Veg</span><span class="tag">16 min</span><span class="tag">Classic</span></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-group">
+            <span class="eyebrow">Desserts & Drinks</span>
+            <h2>Finish the table on a soft, refreshing note</h2>
+            <div class="dish-grid">
+              <article class="dish">
+                <div class="dish-head"><h3>Royal Firni</h3><span class="price">Rs. 149</span></div>
+                <p>Silky milk pudding with cardamom and nuts for a calm, elegant close to a rich meal.</p>
+                <div class="dish-meta"><span class="tag">Dessert</span><span class="tag">8 min</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Gulab Jamun Duo</h3><span class="price">Rs. 119</span></div>
+                <p>Soft jamuns served warm with syrupy richness that pairs beautifully after biryani or kebabs.</p>
+                <div class="dish-meta"><span class="tag">Dessert</span><span class="tag">7 min</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Kesari Lassi</h3><span class="price">Rs. 139</span></div>
+                <p>A chilled saffron-lassi style cooler that rounds off the spice and adds a celebratory touch.</p>
+                <div class="dish-meta"><span class="tag">Drink</span><span class="tag">5 min</span></div>
+              </article>
+              <article class="dish">
+                <div class="dish-head"><h3>Mint Mojito Cooler</h3><span class="price">Rs. 129</span></div>
+                <p>Bright mint, citrus notes, and a clean finish that keeps the table refreshed between courses.</p>
+                <div class="dish-meta"><span class="tag">Drink</span><span class="tag">5 min</span></div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <aside class="side-card">
+          <span class="eyebrow">Quick actions</span>
+          <h3>Turn the menu into a reservation or order fast.</h3>
+          <p>This page is now part of the real website flow, so guests can move from menu browsing to directions, WhatsApp, or booking without friction.</p>
+          <div class="stack">
+            <a href="index.html#reservation">Reserve a table</a>
+            <a href="https://wa.me/917797777773?text=Hello%20I%20want%20to%20order%20from%20the%20full%20menu%20at%20Nawaab%27s%20Restaurant%20%26%20Caterers." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+            <a href="tel:+917797777773">Call the restaurant</a>
+            <a href="https://maps.app.goo.gl/4suhm9XRPbtXRCv97" target="_blank" rel="noopener noreferrer">Open Google Maps</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-copy">
+        <span class="eyebrow">NAWAAB'S RESTAURANT & CATERERS</span>
+        <p>Royal flavors, warm interiors, late-night comfort, and catering designed for Durgapur celebrations.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#home">Homepage</a>
+        <a href="index.html#menu">Website Menu</a>
+        <a href="catering-menu.html">Catering Sheet</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-and-conditions.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Terms and conditions for NAWAAB'S RESTAURANT & CATERERS reservations, orders, and catering requests.">
+  <meta name="theme-color" content="#111111">
+  <title>NAWAAB'S Terms & Conditions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --panel: rgba(26, 26, 26, 0.92);
+      --panel-strong: rgba(13, 13, 13, 0.96);
+      --text: #ffffff;
+      --text-dark: #222222;
+      --muted: #e4d6c3;
+      --gold: #d4af37;
+      --gold-soft: #e9c46a;
+      --cream: #fff5e1;
+      --cta: #ff3d00;
+      --cta-soft: #ff6b35;
+      --line: rgba(212, 175, 55, 0.16);
+      --line-strong: rgba(255, 245, 225, 0.16);
+      --shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+      --container: min(1120px, calc(100% - 32px));
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(212, 175, 55, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(128, 0, 0, 0.16), transparent 24%),
+        linear-gradient(180deg, #171717 0%, #111111 44%, #0d0d0d 100%);
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: var(--container); margin: 0 auto; }
+    .announcement {
+      border-bottom: 1px solid rgba(255, 245, 225, 0.08);
+      background: linear-gradient(90deg, rgba(128, 0, 0, 0.94), rgba(255, 61, 0, 0.88));
+    }
+    .announcement .container {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .announcement a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(13, 13, 13, 0.82);
+      border-bottom: 1px solid rgba(255, 245, 225, 0.08);
+    }
+    .site-header .container {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-soft), var(--cta-soft));
+      color: var(--text-dark);
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    .brand-copy { display: flex; flex-direction: column; gap: 2px; }
+    .brand-kicker {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .brand-name {
+      font-family: "Playfair Display", serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line-strong);
+      background: rgba(255, 245, 225, 0.05);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+    .nav .primary {
+      color: var(--text);
+      background: linear-gradient(135deg, var(--cta-soft), var(--cta));
+      border-color: transparent;
+    }
+    .page-shell { padding: 44px 0 72px; }
+    .hero,
+    .terms-card,
+    .side-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel), var(--panel-strong));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+    .hero {
+      border-radius: 34px;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    h1, h2, h3 {
+      font-family: "Playfair Display", serif;
+      line-height: 1.06;
+    }
+    h1 {
+      margin: 18px 0 16px;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+    }
+    p, li { color: var(--muted); }
+    .actions, .stack, .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .hero-meta { margin-top: 24px; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 245, 225, 0.05);
+      color: var(--cream);
+    }
+    .actions { margin-top: 24px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      border: 1px solid var(--line-strong);
+      background: rgba(255, 245, 225, 0.05);
+    }
+    .button.primary {
+      color: var(--text);
+      background: linear-gradient(135deg, var(--cta-soft), var(--cta));
+      border-color: transparent;
+    }
+    .button.gold {
+      color: var(--text-dark);
+      background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+      border-color: transparent;
+    }
+    .layout {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 24px;
+      align-items: start;
+    }
+    .terms-card {
+      border-radius: 30px;
+      padding: 28px;
+    }
+    .terms-card + .terms-card { margin-top: 20px; }
+    ul { margin: 12px 0 0; padding-left: 20px; }
+    li + li { margin-top: 8px; }
+    .side-card {
+      position: sticky;
+      top: 100px;
+      border-radius: 28px;
+      padding: 24px;
+    }
+    .side-card .stack {
+      margin-top: 18px;
+      flex-direction: column;
+    }
+    .side-card .stack a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 14px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 245, 225, 0.04);
+      color: var(--cream);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: rgba(13, 13, 13, 0.94);
+    }
+    .site-footer .container {
+      padding: 26px 0 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .footer-copy { max-width: 420px; }
+    .footer-copy p { margin-top: 10px; }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .footer-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 245, 225, 0.04);
+      color: var(--cream);
+      font-size: 0.84rem;
+    }
+    @media (max-width: 960px) {
+      .hero, .layout { grid-template-columns: 1fr; }
+      .side-card { position: relative; top: auto; }
+    }
+    @media (max-width: 720px) {
+      .announcement .container,
+      .site-header .container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0;
+      }
+      .announcement a { display: none; }
+      .hero, .terms-card, .side-card { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">
+    <div class="container">
+      <span>Reservations, orders, and catering requests are handled under clear booking terms.</span>
+      <a href="index.html#reservation">Reserve Now</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html#home" aria-label="Back to Nawaab's homepage">
+        <span class="brand-mark">N</span>
+        <span class="brand-copy">
+          <span class="brand-kicker">Durgapur</span>
+          <span class="brand-name">NAWAAB'S</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Page links">
+        <a href="index.html#menu">Main Website</a>
+        <a href="full-menu.html">Full Menu</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a class="primary" href="https://wa.me/917797777773?text=Hello%20I%20have%20a%20booking%20question%20about%20Nawaab%27s%20Restaurant%20%26%20Caterers." target="_blank" rel="noopener noreferrer">WhatsApp Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container">
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Terms & Conditions</span>
+          <h1>Booking, catering, and order rules presented inside the real website flow.</h1>
+          <p>These terms are now integrated into the Nawaab's website so guests can review service expectations and still move directly into reservations, menu browsing, or contact support.</p>
+          <div class="hero-meta">
+            <span class="pill">Reservations</span>
+            <span class="pill">Catering</span>
+            <span class="pill">Orders</span>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="index.html#reservation">Book a Table</a>
+            <a class="button gold" href="index.html#catering">Plan Catering</a>
+          </div>
+        </div>
+        <div class="terms-card">
+          <h2>Terms summary</h2>
+          <p>Form submissions and WhatsApp order requests are treated as requests until the restaurant team confirms availability, timing, and any event-specific requirements.</p>
+        </div>
+      </section>
+
+      <div class="layout">
+        <div>
+          <section class="terms-card">
+            <span class="eyebrow">Reservations</span>
+            <h2>Table bookings remain subject to confirmation</h2>
+            <ul>
+              <li>Table requests are subject to seating availability.</li>
+              <li>Large-group bookings may require direct confirmation by phone.</li>
+              <li>Please inform the restaurant quickly if your plans change.</li>
+            </ul>
+          </section>
+
+          <section class="terms-card">
+            <span class="eyebrow">Catering</span>
+            <h2>Packages may change based on service scope</h2>
+            <ul>
+              <li>Pricing and menu scope may vary by guest count, venue, travel distance, and service style.</li>
+              <li>Custom event work may require an advance discussion before final confirmation.</li>
+              <li>Buffet or large-event planning may need additional lead time for coordination.</li>
+            </ul>
+          </section>
+
+          <section class="terms-card">
+            <span class="eyebrow">Orders</span>
+            <h2>WhatsApp checkout supports the final order handoff</h2>
+            <ul>
+              <li>WhatsApp checkout sends the final order summary to the restaurant for confirmation.</li>
+              <li>Delivery or kitchen timing shown on the site is an estimate and may vary during peak periods.</li>
+              <li>Availability may change for limited dishes or same-day high-demand platters.</li>
+            </ul>
+          </section>
+
+          <section class="terms-card">
+            <span class="eyebrow">Support</span>
+            <h2>Best path for urgent help</h2>
+            <p>For urgent questions, same-day changes, or event clarifications, call <a href="tel:+917797777773">+91 77977 77773</a> or use the WhatsApp actions available across the website.</p>
+          </section>
+        </div>
+
+        <aside class="side-card">
+          <span class="eyebrow">Related pages</span>
+          <h3>Continue in the website flow</h3>
+          <p>Move directly from policy reading into reservations, menu browsing, or privacy review without losing context.</p>
+          <div class="stack">
+            <a href="index.html#home">Homepage</a>
+            <a href="index.html#reservation">Reservation</a>
+            <a href="full-menu.html">Full Menu</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="https://maps.app.goo.gl/4suhm9XRPbtXRCv97" target="_blank" rel="noopener noreferrer">Google Maps</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-copy">
+        <span class="eyebrow">NAWAAB'S RESTAURANT & CATERERS</span>
+        <p>Royal flavors, warm interiors, late-night comfort, and catering designed for Durgapur celebrations.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#home">Homepage</a>
+        <a href="full-menu.html">Full Menu</a>
+        <a href="catering-menu.html">Catering Sheet</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
